@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  propostadb:
+    image: mongo
+volumes:
+  mongo_propostadbrover_data:

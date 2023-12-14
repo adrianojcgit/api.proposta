@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  propostadb:
+    container_name: propostadbrover
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: macoratti
+      MONGO_INITDB_ROOT_PASSWORD: numsey
+    ports:
+      - "27021:27017"
+    volumes:
+      - mongo_propostadbrover_data:/data/db
