@@ -29,17 +29,28 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IProposta, PropostaService>();
 builder.Services.AddScoped<IPropostaRepository, PropostaRepository>();
+//var corsPolicy = "MinhaPoliticaCORS";
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy(name: "MinhaPoliticaCORS",
+//                      policy =>
+//                      {
+//                          policy.WithOrigins("https://localhost:7232/");
+//                      });
+//});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
+//app.UseRouting();
 app.UseHttpsRedirection();
-
+//app.UseCors(corsPolicy);
 app.UseAuthorization();
 
 app.MapControllers();

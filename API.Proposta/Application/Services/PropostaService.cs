@@ -24,7 +24,7 @@ namespace API.Proposta.Application.Services
             dabaseSettings.Value.DatabaseName = configuration["DatabaseSettings:DatabaseName"];
             var mongoClient = new MongoClient(dabaseSettings.Value.ConnectionString);
             var mongoDatabase = mongoClient.GetDatabase(dabaseSettings.Value.DatabaseName);
-            _PropostaDtoCollection = mongoDatabase.GetCollection<PropostaBaseDto>("Proposta");
+            _PropostaDtoCollection = mongoDatabase.GetCollection<PropostaBaseDto>("PropostaRover");
             _PropostaRepository = propostaRepository;
             _mapper = mapper;
         }

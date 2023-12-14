@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API.Proposta")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4032e139c0582481d4a7fc34c60ba3636ea780cb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b1cc10eb97b0a02f3bfa3d2fc8c390e091a0cc2")]
 [assembly: System.Reflection.AssemblyProductAttribute("API.Proposta")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API.Proposta")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
